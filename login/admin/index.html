@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shippori+Antique&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bus-container">
+        <div class="left-section-container">
+            <div class="left-header-text">
+                Ente Bus
+            </div>
+            <div class="menu-items">
+                <p class="items">Users</p>
+                <p class="items">Bus owners</p>
+
+            </div>
+        </div>
+        <div class="right-section-container">
+            <div class="right-header-text">
+                <p class="left-item">Admin Panel / Users</p>
+                <p class="right-item">Welcome Arjun Shaji</p>
+            </div>
+            <div class="line"></div>
+            <div class="right-section-table">
+
+
+                <!-- <div class="user-section">
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr class="table-primary">
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+
+
+                <div class="bus-owner-section">
+                    <div class="create-btn-container">
+                        <button class="create-btn">+</button>
+                    </div>
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arjun Shaji</td>
+                                <td>arjun@gmail.com</td>
+                                <td><button type="button" class="btn btn-info">
+                                        Edit
+                                    </button></td>
+                                <td><button type="button" class="btn btn-danger" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Delete
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>Arjun Shaji</td>
+                                <td>arjun@gmail.com</td>
+                                <td><button type="button" class="btn btn-info">
+                                        Edit
+                                    </button></td>
+                                <td><button type="button" class="btn btn-danger" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Delete
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>Arjun Shaji</td>
+                                <td>arjun@gmail.com</td>
+                                <td><button type="button" class="btn btn-info">
+                                        Edit
+                                    </button></td>
+                                <td><button type="button" class="btn btn-danger" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Delete
+                                    </button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Delete Bus Owner</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure? <br> ( this will delete all details associated with this user... )
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        font-family: "Shippori Antique", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 0;
+        margin: 0;
+    }
+
+    p,
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bus-container {
+        width: 100%;
+        display: flex;
+    }
+
+
+    .left-section-container {
+        width: 20%;
+        height: 630px;
+        background-color: black;
+        color: #fff;
+    }
+
+    .right-section-container {
+        color: #fff;
+        width: 80%;
+        height: 630px;
+        background-color: rgb(5, 5, 5);
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .left-header-text {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+        color: #43a2ef;
+    }
+
+    .right-header-text {
+        width: 50%;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .menu-items {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .items {
+        line-height: 35px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        height: 40px;
+        border: 1px solid #70b6ef;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .items:hover {
+        background-color: #3b9eee;
+        transition: .5s;
+    }
+
+    .line {
+        margin-top: 30px;
+        width: 100%;
+        height: .5px;
+        background-color: rgb(148, 135, 135);
+    }
+
+    .right-section-table {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .create-btn {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        background-color: #70b6ef;
+        width: 40px;
+        height: 35px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 2px;
+    }
+
+    button:focus {
+        outline: none;
+    }
+</style>
